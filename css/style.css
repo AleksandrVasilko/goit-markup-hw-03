@@ -13,6 +13,23 @@ body{
     --primary-bg-color: #2F303A;
 }
 
+h1, h2, h3, p, u, .li{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid red;
+}
+
+.section{
+    padding: 94px 0;
+}
+
 .logo{
     font-family: 'Raleway';
     font-weight: 700;
