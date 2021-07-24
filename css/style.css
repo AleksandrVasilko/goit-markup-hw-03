@@ -104,6 +104,13 @@ h1, h2, h3, p, u, .li{
     background-color: var(--accent-color);
 }
 
+.values,
+.product,
+.comand{
+    display: flex;
+    justify-content: space-between;
+}
+
 .values-item{
     font-weight: 700;
     font-size: 14px;
