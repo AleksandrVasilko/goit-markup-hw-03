@@ -23,7 +23,7 @@ h1, h2, h3, p, u, .li{
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid red;
+    /*outline: 2px solid red;*/
 }
 
 .section{
@@ -31,6 +31,7 @@ h1, h2, h3, p, u, .li{
 }
 
 .logo{
+    margin-right: 93px;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -49,11 +50,14 @@ h1, h2, h3, p, u, .li{
 }
 
 .link-page{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;    
+    color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--title-text-color);
     text-decoration: none;
 }
 
@@ -63,6 +67,7 @@ h1, h2, h3, p, u, .li{
 
 .link-page.contact-footer{
     color: rgba(255,255,255, 0.6);
+    padding: 0;
 }
 
 .link-page:hover,
@@ -83,6 +88,37 @@ h1, h2, h3, p, u, .li{
     background-color: var(--primary-bg-color);
 }
 
+.header{
+    border: 1px solid #ECECEC;
+}
+
+.header-box,
+.nav-box,
+.nav-links,
+.contact-links{
+    display: flex;
+    align-items: center;
+}
+
+.header-box{
+    align-items: center;
+}
+
+.nav-links{
+    margin-left: auto;
+}
+
+.nav-link,
+.contact-link{
+    margin-right: 50px;
+}
+
+/* Герой */
+
+.hero-section{
+    text-align: center;
+}
+
 .hero-title{
     font-weight: 900;
     font-size: 44px;
@@ -91,6 +127,8 @@ h1, h2, h3, p, u, .li{
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--secondary-text-color);
+    width: 696px;
+    margin: auto;
 }
 
 .hero-btn{
@@ -102,6 +140,26 @@ h1, h2, h3, p, u, .li{
     letter-spacing: 0.06em;
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+    margin-top: 30px;
+    border: var(--accent-color);
+    border-radius: 4px;
+    padding: 10px 32px;
+}
+
+.values-list{
+    display: flex;
+    justify-content: space-between;
+}
+.values-list .item{
+    width: 270px;
+}
+
+.values-list .item:last-child {
+  margin-right: 0;
+}
+
+.values-section{
+    padding-bottom: 0;
 }
 
 .values,
@@ -111,6 +169,14 @@ h1, h2, h3, p, u, .li{
     justify-content: space-between;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .values-item{
     font-weight: 700;
     font-size: 14px;
@@ -118,6 +184,7 @@ h1, h2, h3, p, u, .li{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-text-color);
+    margin-bottom: 10px;
 }
 
 .values-discription{
@@ -134,6 +201,16 @@ h1, h2, h3, p, u, .li{
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+    margin-bottom: 50px;
+}
+
+.comand-section{
+    background: var(--botton-color);
+}
+
+.comand-item{
+    background: var(--secondary-text-color);
+    text-align: center;
 }
 
 .employee{
@@ -142,6 +219,7 @@ h1, h2, h3, p, u, .li{
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+    margin-top: 30px;
 }
 
 .position{
@@ -149,6 +227,13 @@ h1, h2, h3, p, u, .li{
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.btn-box{
+    display: flex;
+    justify-content: center;
 }
 
 .filter-btn{
@@ -160,6 +245,9 @@ h1, h2, h3, p, u, .li{
     color: var(--title-text-color);
     background-color: var(--botton-color);
     cursor: pointer;
+    border-radius: 4px;
+    border: var(--botton-color);
+    padding: 6px 22px;
 }
 
 .filter-btn:hover,
@@ -168,12 +256,28 @@ h1, h2, h3, p, u, .li{
     color: var(--primary-white-color);
 }
 
+.filter-item{
+    margin-right: 8px;
+    margin-bottom: 50px;
+}
+
+.filter-item:last-child{
+     margin-right: 0;
+}
+.project-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .project-title{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--title-text-color);
+    margin-top: 20px;
+    margin-left: 24px;
 }
 
 .project-discription{
@@ -181,10 +285,30 @@ h1, h2, h3, p, u, .li{
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    margin-top: 4px;
+    margin-bottom: 20px;
+    margin-left: 24px;
+}
+
+.project-item{
+    border: 1px solid #EEEEEE;
+    margin-bottom: 30px;
 }
 
 .project-item a {
     text-decoration: none;
+}
+
+.footer{
+    padding: 60px 0;
+}
+
+.footer .contact-link{
+    padding: 9px 0;
+}
+
+.footer .contact-link:last-child{
+    padding: 0;
 }
 
 .address{
@@ -193,6 +317,7 @@ h1, h2, h3, p, u, .li{
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--primary-white-color);
+    padding-top: 20px;
 }
 
 .li{
