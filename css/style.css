@@ -19,7 +19,7 @@ h1, h2, h3, p, u, .li{
 }
 
 .container{
-    width: 1200px;
+    width: 1230px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -67,7 +67,9 @@ h1, h2, h3, p, u, .li{
 
 .link-page.contact-footer{
     color: rgba(255,255,255, 0.6);
+    line-height: 1.71;
     padding: 0;
+    margin-top: 9px;
 }
 
 .link-page:hover,
@@ -89,7 +91,7 @@ h1, h2, h3, p, u, .li{
 }
 
 .header{
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header-box,
@@ -117,6 +119,7 @@ h1, h2, h3, p, u, .li{
 
 .hero-section{
     text-align: center;
+    padding: 200px 0;
 }
 
 .hero-title{
@@ -213,13 +216,15 @@ h1, h2, h3, p, u, .li{
     text-align: center;
 }
 
+.comand-discription{
+    padding: 30px 0;
+}
 .employee{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
-    margin-top: 30px;
 }
 
 .position{
@@ -228,12 +233,12 @@ h1, h2, h3, p, u, .li{
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     margin-top: 10px;
-    margin-bottom: 30px;
 }
 
 .btn-box{
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .filter-btn{
@@ -248,6 +253,7 @@ h1, h2, h3, p, u, .li{
     border-radius: 4px;
     border: var(--botton-color);
     padding: 6px 22px;
+    
 }
 
 .filter-btn:hover,
@@ -258,26 +264,28 @@ h1, h2, h3, p, u, .li{
 
 .filter-item{
     margin-right: 8px;
-    margin-bottom: 50px;
+    
 }
 
 .filter-item:last-child{
      margin-right: 0;
 }
+
 .project-list{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
+.project-discript{
+    padding: 20px 24px;
+}
 .project-title{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--title-text-color);
-    margin-top: 20px;
-    margin-left: 24px;
 }
 
 .project-discription{
@@ -286,13 +294,15 @@ h1, h2, h3, p, u, .li{
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     margin-top: 4px;
-    margin-bottom: 20px;
-    margin-left: 24px;
 }
 
 .project-item{
     border: 1px solid #EEEEEE;
     margin-bottom: 30px;
+}
+
+.project-item:nth-last-child(-n+3){
+    margin-bottom: 0;
 }
 
 .project-item a {
@@ -303,21 +313,13 @@ h1, h2, h3, p, u, .li{
     padding: 60px 0;
 }
 
-.footer .contact-link{
-    padding: 9px 0;
-}
-
-.footer .contact-link:last-child{
-    padding: 0;
-}
-
 .address{
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--primary-white-color);
-    padding-top: 20px;
+    margin-top: 20px;
 }
 
 .li{
